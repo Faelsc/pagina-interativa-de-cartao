@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --borda-input: linear-gradient(
+    90deg,
+    hsl(249, 99%, 64%) 0%,
+    hsl(278, 94%, 30%) 100%
+  );
+  --erros-input: hsl(0, 100%, 66%);
+  --violeta-claro: hsl(270, 3%, 87%);
+  --violeta-escuro: hsl(279, 6%, 55%);
+  --preto-violeta: hsl(278, 68%, 11%);
+
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  height: 100vh;
+  background-image: url("./images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 24rem;
+}
+
+main {
+  max-width: 37.5rem;
+  padding: 3.2rem 1.6rem;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+.cartao {
+  position: relative;
+  height: 25.2rem;
+}
+
+.cartao-verso {
+  position: relative;
+  max-width: 28.6rem;
+  margin: 0 0 0 auto;
+}
+
+.cartao-verso img {
+  width: 100%;
+}
+
+.cartao-verso .cvc {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.065em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3.6rem;
+}
+
+.cartao-frente {
+  max-width: 28.6rem;
+  position: absolute;
+  top: 9.4rem;
+}
+
+.cartao-frente img {
+  width: 100%;
+}
+
+.cartao-detalhes {
+  position: absolute;
+  top: 0;
+  padding: 1.8rem 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.cartao-detalhes img {
+  width: 5.4rem;
+  margin-bottom: 4rem;
+}
+
+.cartao-numero {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+}
+
+form {
+  margin-top: 5rem;
+  padding: 0 0.8rem;
+  display: block;
+}
+
+.formulario {
+  margin-top: 2.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  color: var(--preto-violeta);
+  margin-bottom: 1rem;
+}
+
+.formulario input {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--violeta-claro);
+  border-radius: 0.8rem;
+  height: 4.5rem;
+  padding: 0 1.6rem;
+  color: var(--preto-violeta);
+}
+
+.formulario input:focus {
+  border: 1px solid;
+  border-color: var(--borda-input) !important;
+}
+
+.info-erro {
+  display: none;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--erros-input);
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.input-erro {
+  border-color: var(--erros-input) !important;
+}
+
+.form-exp-date {
+  display: flex;
+  gap: 1rem;
+}
+
+.data {
+  display: flex;
+  gap: 0.8rem;
+}
+
+#mes,
+#ano {
+  width: 7.2rem;
+}
+
+.botao {
+  display: block;
+  margin-top: 2.8rem;
+  border: 0;
+  background: var(--preto-violeta);
+  color: white;
+  width: 100%;
+  height: 5.3rem;
+  border-radius: 0.8rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.botao:hover {
+  background: hsla(278, 68%, 11%, 80%);
+}
+
+.finalizou {
+  margin-top: 4.8rem;
+  padding: 0 0.8rem;
+  text-align: center;
+  display: none;
+}
+
+.finalizou img {
+  margin: 0 auto;
+  margin-bottom: 3.8rem;
+}
+
+.finalizou h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--preto-violeta);
+  margin-bottom: 2.4rem;
+}
+
+.finalizou p {
+  color: var(--violeta-escuro);
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 33.5% 100%;
+  }
+
+  main {
+    max-width: 111.2rem;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 12.7rem;
+    height: 100vh;
+  }
+
+  .cartao {
+    height: 52.8rem;
+    max-width: max-content;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3.8rem;
+  }
+
+  .cartao-verso,
+  .cartao-frente {
+    max-width: max-content;
+  }
+
+  .cartao-frente {
+    position: relative;
+    top: 0;
+  }
+
+  .cartao-verso {
+    margin-left: 9.4rem;
+  }
+
+  .cartao-verso .cvc {
+    font-size: 1.4rem;
+    letter-spacing: 0.14em;
+    padding-right: 5.8rem;
+  }
+
+  .cartao-detalhes {
+    padding: 2.8rem 3.2rem;
+  }
+
+  .cartao-detalhes img {
+    width: max-content;
+    margin-bottom: 6.8rem;
+  }
+
+  .cartao-numero {
+    font-size: 2.8rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .info {
+    font-size: 1.4rem;
+    letter-spacing: 0.14em;
+  }
+
+  form {
+    margin-top: 0.3rem;
+    padding: 0;
+    max-width: 38.1rem;
+  }
+
+  .formulario {
+    margin: 0;
+    margin-bottom: 2.8rem;
+  }
+
+  .form-exp-date {
+    gap: 2rem;
+  }
+
+  .data {
+    gap: 1rem;
+  }
+
+  #mes,
+  #ano {
+    width: 8rem;
+  }
+
+  .botao {
+    margin: 0;
+    margin-top: 1.2rem;
+  }
+
+  .finalizou {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 38.1rem;
+  }
+}
