@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive card details form solution
 
-Esta é a minha solução para [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Os desafios do Frontend Mentor ajudam a melhorar suas habilidades como desenvolvedor através da construção de projetos realistas.
+Esta é a minha solução para [Interactive card details form challenge on Frontend Mentor](./images/bg-main-desktop.png). Os desafios do Frontend Mentor ajudam a melhorar suas habilidades como desenvolvedor através da construção de projetos realistas.
 
 ## Bem-Vindos! 👋
 
