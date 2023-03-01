@@ -21,10 +21,9 @@ Obrigado por acessarem este Desafio do Front-end Mentor!
 ### O Desafio
 
 O desafio aqui era:
-Users should be able to:
 
 - Preencher o formulário e ver os detalhes do cartão se modificando em tempo real
-- Receber uma mensagem de erro quando o formulário for preenchida de forma errada, como:
+- Receber uma mensagem de erro quando o formulário for preenchido de forma errada, como:
   - Quando um campo está vazio
   - Quando os campos de númer, data e CVC estiverem em formato incorreto
 - Utilizar um layout responsivo de acordo com a tela do dispositivo.
