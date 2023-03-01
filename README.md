@@ -20,7 +20,7 @@ Obrigado por acessarem este Desafio do Front-end Mentor!
 
 ### O Desafio
 
-O desafio aqui era:
+O desafio aqui era o seguinte:
 
 - Preencher o formulário e ver os detalhes do cartão se modificando em tempo real
 - Receber uma mensagem de erro quando o formulário for preenchido de forma errada, como:
